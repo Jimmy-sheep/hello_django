@@ -32,7 +32,7 @@ def add_api(request):
     else:
         return Response(
             {"res": "parameter: name is None"}, 
-            status = status.HTTP_400_BAd_request
+            status = status.HTTP_400_BAD_request
         )
 
 @api_view(['GET'])
