@@ -30,10 +30,7 @@ def add_api(request):
     if title:
         return Response({"data": title + " insert!"}, status = status.HTTP_200_OK)
     else:
-        return Response(
-            {"res": "parameter: name is None"}, 
-            status = status.HTTP_400_BAD_request
-        )
+        return Response({"res": "parameter: name is None"}, status = status.HTTP_400_BAD_request)
 
 @api_view(['GET'])
 def list_api(request):
